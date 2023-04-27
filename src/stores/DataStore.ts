@@ -9,7 +9,7 @@ export const usePeopleStore = defineStore('people', {
     actions: {
         async getData() {
             this.isLoading = true
-            const response = await fetch('../../data/example-data.json')
+            const response = await fetch('../data/example-data.json')
             const data = await response.json()
             
             this.people = data.data
